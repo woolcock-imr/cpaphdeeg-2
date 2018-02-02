@@ -1,9 +1,14 @@
+var prefix=$vm.module_list[$vm.vm['__ID'].name].prefix; if(prefix==undefined) prefix="";
+//-------------------------------------
+var participant_pid=$vm.module_list[prefix+'participant'].table_id;
+var sql_participant="@('Study_ID')";
+//-------------------------------------
 $('#back__ID').hide();
 //-------------------------------------
 $('#Participant__ID').autocomplete({
     minLength:0,
     source:function(request,response){
-        var sql="with tb as (select name=@('Subject_Initials')+' '+@('Gender')+' '+@('DOB'),value2=UID,value3=S1 from [FORM-"+$vm.module_list[_app_id+'participant']['table_id']+"])";
+        var sql="with tb as (select name="+sql_participant+",value2=UID,value3=S1 from [TABLE-"+participant_pid+"])";
         sql+=" select top 10 name,value=name,value2,value3 from tb where Name like '%'+@S1+'%' ";
         $VmAPI.request({data:{cmd:'auto',s1:request.term,sql:sql,minLength:0},callback:function(res){
             response($vm.autocomplete_list(res.table));
