@@ -12,8 +12,8 @@
         _fields="_Form|form_module,Status|S3,Notes|NT,Participant,"+_task_fields;
         _fields+=",Submit Date|DateTime,Submitted by|Author,_Delete,_Hidden|Participant_uid";
         //-------------------------------------
-        $('#D__ID").on('load',function(){    _set_req(); _request_data(); })
-        $('#D__ID").on('back',function(){    _set_req(); _request_data(); })
+        $('#D__ID').on('load',function(){    _set_req(); _request_data(); })
+        $('#D__ID').on('back',function(){    _set_req(); _request_data(); })
         //-------------------------------------
         _cell_render=function(records,I,field,td,set_value,source){
             switch(field){
@@ -25,8 +25,8 @@
                     html+="<span class=file_buttons><a title='Remove the file' class=remove_file>X<a> <a title='Choose a file' class=choose_file>&#9783;<a></span>";
                     html+="<form><input type=file style='display:none'></input></form>";
                     td.html(html);
-                    if(records[I][field]==="" || records[I][field]===null || records[I][field]===undefined) td.find('a.remove_file").css('visibility','hidden");
-                    td.find('u").on('click',function(){
+                    if(records[I][field]==="" || records[I][field]===null || records[I][field]===undefined) td.find('a.remove_file').css('visibility','hidden');
+                    td.find('u').on('click',function(){
                         var f_name=$(this).html();
                         var rid=records[I].ID;
                         if(rid!==undefined){
@@ -34,16 +34,16 @@
                         }
                         else alert("No file was found on server.")
                     });
-                    td.find('a.choose_file").on('click',function(){
-                        if(td.find('form")[0]!==undefined) td.find('form")[0].reset();
-                        td.find('input[type=file]").trigger('click");
+                    td.find('a.choose_file').on('click',function(){
+                        if(td.find('form')[0]!==undefined) td.find('form')[0].reset();
+                        td.find('input[type=file]').trigger('click');
                     })
-                    td.find('a.remove_file").on('click',function(){
-                        td.find('a.remove_file").css('visibility','hidden");
+                    td.find('a.remove_file').on('click',function(){
+                        td.find('a.remove_file').css('visibility','hidden');
                         change_file_name("");
                     })
-                    td.find('input[type=file]").on('change',function(evt){
-                        td.find('a.remove_file").css('visibility','");
+                    td.find('input[type=file]').on('change',function(evt){
+                        td.find('a.remove_file').css('visibility',');
                         var file = this.files[0];
                         change_file_name(file.name);
                         read_file(file);
@@ -51,17 +51,17 @@
                     var change_file_name=function(name){
                         set_value(name,records,I,field);
                         if(source=='grid'){
-                            td.parent().find("td[data-id='"+field+"']").find('u").html(name);
+                            td.parent().find("td[data-id='"+field+"']").find('u').html(name);
                         }
                         else{
-                            td.parent().parent().find("td[data-id='"+field+"']").find('u").html(name);
+                            td.parent().parent().find("td[data-id='"+field+"']").find('u').html(name);
                         }
                     }
                     var read_file=function(file){
                         var reader = new FileReader();
                         reader.onload = (function(e) {
                             var contents = e.target.result;
-                            var lines=contents.replace(/"/g,'").replace(/\r/,'\n").replace(/\n\n/,'\n").split('\n");
+                            var lines=contents.replace(/"/g,'').replace(/\r/,'\n').replace(/\n\n/,'\n').split('\n');
                             for(i=0;i<lines.length;i++){
                                  var row=lines[i].split(/=/);
                                  switch(row[0].trim()) {
@@ -295,7 +295,7 @@ case 'PLM_Index_TST': records[I]['PLM_Index_TST']=row[1];td.parent().find("td[da
             _default_cell_render(records,I,field,td,set_value,source);
         }
         //-------------------------------------
-        //document.getElementById('PVT_File_Name").addEventListener('change', handleFileSelect,false);
+        //document.getElementById('PVT_File_Name').addEventListener('change', handleFileSelect,false);
         //-------------------------------------
         _before_submit=function(record,dbv){
             return _set_status_and_participant(record,dbv);
