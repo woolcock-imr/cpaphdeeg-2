@@ -64,7 +64,8 @@
                             var lines=contents.replace(/"/g,'').replace(/\r/,'\n').replace(/\n\n/,'\n').split('\n');
                             for(i=0;i<lines.length;i++){
                                  var row=lines[i].split(/=/);
-                                 switch(row[0].trim()).replace(/ /g,'')) {
+                                 switch(row[0].trim().replace(/ /g,'')) {
+
 case 'DateofBirth': records[I]['Date of Birth']=row[1];td.parent().find("td[data-id='Date of Birth']").html(row[1]);break;
 case 'Sex': records[I]['Sex']=row[1];td.parent().find("td[data-id='Sex']").html(row[1]);break;
 case 'Wt_kg': records[I]['Wt_kg']=row[1];td.parent().find("td[data-id='Wt_kg']").html(row[1]);break;
