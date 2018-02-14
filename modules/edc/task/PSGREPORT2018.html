@@ -64,13 +64,13 @@
                             var lines=contents.replace(/"/g,'').replace(/\r/,'\n').replace(/\n\n/,'\n').split('\n');
                             for(i=0;i<lines.length;i++){
                                  var row=lines[i].split(/=/);
-                                 switch(row[0].trim()) {
-case 'Date of Birth': records[I]['Date of Birth']=row[1];td.parent().find("td[data-id='Date of Birth']").html(row[1]);break;
+                                 switch(row[0].trim()).replace(/ /g, '')) {
+case 'DateofBirth': records[I]['Date of Birth']=row[1];td.parent().find("td[data-id='Date of Birth']").html(row[1]);break;
 case 'Sex': records[I]['Sex']=row[1];td.parent().find("td[data-id='Sex']").html(row[1]);break;
 case 'Wt_kg': records[I]['Wt_kg']=row[1];td.parent().find("td[data-id='Wt_kg']").html(row[1]);break;
 case 'Ht_cm': records[I]['Ht_cm']=row[1];td.parent().find("td[data-id='Ht_cm']").html(row[1]);break;
 case 'BMI': records[I]['BMI']=row[1];td.parent().find("td[data-id='BMI']").html(row[1]);break;
-case 'Neck circumference _cm': records[I]['Neck circumference _cm']=row[1];td.parent().find("td[data-id='Neck circumference _cm']").html(row[1]);break;
+case 'Neckcircumference_cm': records[I]['Neck circumference _cm']=row[1];td.parent().find("td[data-id='Neck circumference _cm']").html(row[1]);break;
 case 'ESS': records[I]['ESS']=row[1];td.parent().find("td[data-id='ESS']").html(row[1]);break;
 case 'Study_Date': records[I]['Study_Date']=row[1];td.parent().find("td[data-id='Study_Date']").html(row[1]);break;
 case 'Study_Start_Time': records[I]['Study_Start_Time']=row[1];td.parent().find("td[data-id='Study_Start_Time']").html(row[1]);break;
@@ -79,24 +79,24 @@ case 'Lights_Out_Time': records[I]['Lights_Out_Time']=row[1];td.parent().find("t
 case 'Lights_On_Time': records[I]['Lights_On_Time']=row[1];td.parent().find("td[data-id='Lights_On_Time']").html(row[1]);break;
 case 'Sleep_Onset_Time': records[I]['Sleep_Onset_Time']=row[1];td.parent().find("td[data-id='Sleep_Onset_Time']").html(row[1]);break;
 case 'Sleep_Offset_Time': records[I]['Sleep_Offset_Time']=row[1];td.parent().find("td[data-id='Sleep_Offset_Time']").html(row[1]);break;
-case 'Time_in_Bed _min': records[I]['Time_in_Bed _min']=row[1];td.parent().find("td[data-id='Time_in_Bed _min']").html(row[1]);break;
-case 'Total_Sleep_Time (min)': records[I]['Total_Sleep_Time (min)']=row[1];td.parent().find("td[data-id='Total_Sleep_Time (min)']").html(row[1]);break;
+case 'Time_in_Bed_min': records[I]['Time_in_Bed _min']=row[1];td.parent().find("td[data-id='Time_in_Bed _min']").html(row[1]);break;
+case 'Total_Sleep_Time(min)': records[I]['Total_Sleep_Time (min)']=row[1];td.parent().find("td[data-id='Total_Sleep_Time (min)']").html(row[1]);break;
 case 'Wake_After_Sleep_Onset_min': records[I]['Wake_After_Sleep_Onset_min']=row[1];td.parent().find("td[data-id='Wake_After_Sleep_Onset_min']").html(row[1]);break;
 case 'Sleep_Efficiency_Percent': records[I]['Sleep_Efficiency_Percent']=row[1];td.parent().find("td[data-id='Sleep_Efficiency_Percent']").html(row[1]);break;
 case 'Sleep_Latency_min': records[I]['Sleep_Latency_min']=row[1];td.parent().find("td[data-id='Sleep_Latency_min']").html(row[1]);break;
 case 'REM_Latency_min': records[I]['REM_Latency_min']=row[1];td.parent().find("td[data-id='REM_Latency_min']").html(row[1]);break;
 case 'N2_Latency_min': records[I]['N2_Latency_min']=row[1];td.parent().find("td[data-id='N2_Latency_min']").html(row[1]);break;
 case 'N3_Latency_min': records[I]['N3_Latency_min']=row[1];td.parent().find("td[data-id='N3_Latency_min']").html(row[1]);break;
-case 'NREM _min': records[I]['NREM _min']=row[1];td.parent().find("td[data-id='NREM _min']").html(row[1]);break;
-case 'NREM _Percent': records[I]['NREM _Percent']=row[1];td.parent().find("td[data-id='NREM _Percent']").html(row[1]);break;
+case 'NREM_min': records[I]['NREM _min']=row[1];td.parent().find("td[data-id='NREM _min']").html(row[1]);break;
+case 'NREM_Percent': records[I]['NREM _Percent']=row[1];td.parent().find("td[data-id='NREM _Percent']").html(row[1]);break;
 case 'N1_min': records[I]['N1_min']=row[1];td.parent().find("td[data-id='N1_min']").html(row[1]);break;
 case 'N1_Percent': records[I]['N1_Percent']=row[1];td.parent().find("td[data-id='N1_Percent']").html(row[1]);break;
 case 'N2_min': records[I]['N2_min']=row[1];td.parent().find("td[data-id='N2_min']").html(row[1]);break;
 case 'N2_Percent': records[I]['N2_Percent']=row[1];td.parent().find("td[data-id='N2_Percent']").html(row[1]);break;
 case 'N3_min': records[I]['N3_min']=row[1];td.parent().find("td[data-id='N3_min']").html(row[1]);break;
 case 'N3_Percent': records[I]['N3_Percent']=row[1];td.parent().find("td[data-id='N3_Percent']").html(row[1]);break;
-case 'REM _min': records[I]['REM _min']=row[1];td.parent().find("td[data-id='REM _min']").html(row[1]);break;
-case 'REM _Percent': records[I]['REM _Percent']=row[1];td.parent().find("td[data-id='REM _Percent']").html(row[1]);break;
+case 'REM_min': records[I]['REM _min']=row[1];td.parent().find("td[data-id='REM _min']").html(row[1]);break;
+case 'REM_Percent': records[I]['REM _Percent']=row[1];td.parent().find("td[data-id='REM _Percent']").html(row[1]);break;
 case 'NREM_min_Supine': records[I]['NREM_min_Supine']=row[1];td.parent().find("td[data-id='NREM_min_Supine']").html(row[1]);break;
 case 'NREM_Percent_Supine': records[I]['NREM_Percent_Supine']=row[1];td.parent().find("td[data-id='NREM_Percent_Supine']").html(row[1]);break;
 case 'N1_min_Supine': records[I]['N1_min_Supine']=row[1];td.parent().find("td[data-id='N1_min_Supine']").html(row[1]);break;
@@ -180,7 +180,7 @@ case 'Central_Apnea_Count_NREM': records[I]['Central_Apnea_Count_NREM']=row[1];t
 case 'Central_Apnea_Index_NREM': records[I]['Central_Apnea_Index_NREM']=row[1];td.parent().find("td[data-id='Central_Apnea_Index_NREM']").html(row[1]);break;
 case 'Obstructive_Apnea_Count_NREM': records[I]['Obstructive_Apnea_Count_NREM']=row[1];td.parent().find("td[data-id='Obstructive_Apnea_Count_NREM']").html(row[1]);break;
 case 'Obstructive_Apnea_Index_NREM': records[I]['Obstructive_Apnea_Index_NREM']=row[1];td.parent().find("td[data-id='Obstructive_Apnea_Index_NREM']").html(row[1]);break;
-case 'Hypopnea _Count_NREM': records[I]['Hypopnea _Count_NREM']=row[1];td.parent().find("td[data-id='Hypopnea _Count_NREM']").html(row[1]);break;
+case 'Hypopnea_Count_NREM': records[I]['Hypopnea _Count_NREM']=row[1];td.parent().find("td[data-id='Hypopnea _Count_NREM']").html(row[1]);break;
 case 'Hypopnea_Index_NREM': records[I]['Hypopnea_Index_NREM']=row[1];td.parent().find("td[data-id='Hypopnea_Index_NREM']").html(row[1]);break;
 case 'RERA_Count_NREM': records[I]['RERA_Count_NREM']=row[1];td.parent().find("td[data-id='RERA_Count_NREM']").html(row[1]);break;
 case 'RERA_Index_NREM': records[I]['RERA_Index_NREM']=row[1];td.parent().find("td[data-id='RERA_Index_NREM']").html(row[1]);break;
@@ -190,7 +190,7 @@ case 'Central_Apnea_Count_TST_Supine': records[I]['Central_Apnea_Count_TST_Supin
 case 'Central_Apnea_Index_TST_Supine': records[I]['Central_Apnea_Index_TST_Supine']=row[1];td.parent().find("td[data-id='Central_Apnea_Index_TST_Supine']").html(row[1]);break;
 case 'Obstructive_Apnea_Count_TST_Supine': records[I]['Obstructive_Apnea_Count_TST_Supine']=row[1];td.parent().find("td[data-id='Obstructive_Apnea_Count_TST_Supine']").html(row[1]);break;
 case 'Obstructive_Apnea_Index_TST_Supine': records[I]['Obstructive_Apnea_Index_TST_Supine']=row[1];td.parent().find("td[data-id='Obstructive_Apnea_Index_TST_Supine']").html(row[1]);break;
-case 'Hypopnea _Count_TST_Supine ': records[I]['Hypopnea _Count_TST_Supine ']=row[1];td.parent().find("td[data-id='Hypopnea _Count_TST_Supine ']").html(row[1]);break;
+case 'Hypopnea_Count_TST_Supine ': records[I]['Hypopnea _Count_TST_Supine ']=row[1];td.parent().find("td[data-id='Hypopnea _Count_TST_Supine ']").html(row[1]);break;
 case 'Hypopnea_Index_TST_Supine ': records[I]['Hypopnea_Index_TST_Supine ']=row[1];td.parent().find("td[data-id='Hypopnea_Index_TST_Supine ']").html(row[1]);break;
 case 'RERA_Count_TST_Supine ': records[I]['RERA_Count_TST_Supine ']=row[1];td.parent().find("td[data-id='RERA_Count_TST_Supine ']").html(row[1]);break;
 case 'RERA_Index_TST_Supine ': records[I]['RERA_Index_TST_Supine ']=row[1];td.parent().find("td[data-id='RERA_Index_TST_Supine ']").html(row[1]);break;
@@ -220,7 +220,7 @@ case 'Central_Apnea_Count_TST_NonSupine': records[I]['Central_Apnea_Count_TST_No
 case 'Central_Apnea_Index_TST_NonSupine': records[I]['Central_Apnea_Index_TST_NonSupine']=row[1];td.parent().find("td[data-id='Central_Apnea_Index_TST_NonSupine']").html(row[1]);break;
 case 'Obstructive_Apnea_Count_TST_NonSupine': records[I]['Obstructive_Apnea_Count_TST_NonSupine']=row[1];td.parent().find("td[data-id='Obstructive_Apnea_Count_TST_NonSupine']").html(row[1]);break;
 case 'Obstructive_Apnea_Index_TST_NonSupine': records[I]['Obstructive_Apnea_Index_TST_NonSupine']=row[1];td.parent().find("td[data-id='Obstructive_Apnea_Index_TST_NonSupine']").html(row[1]);break;
-case 'Hypopnea _Count_TST_NonSupine ': records[I]['Hypopnea _Count_TST_NonSupine ']=row[1];td.parent().find("td[data-id='Hypopnea _Count_TST_NonSupine ']").html(row[1]);break;
+case 'Hypopnea_Count_TST_NonSupine ': records[I]['Hypopnea _Count_TST_NonSupine ']=row[1];td.parent().find("td[data-id='Hypopnea _Count_TST_NonSupine ']").html(row[1]);break;
 case 'Hypopnea_Index_TST_NonSupine ': records[I]['Hypopnea_Index_TST_NonSupine ']=row[1];td.parent().find("td[data-id='Hypopnea_Index_TST_NonSupine ']").html(row[1]);break;
 case 'RERA_Count_TST_NonSupine ': records[I]['RERA_Count_TST_NonSupine ']=row[1];td.parent().find("td[data-id='RERA_Count_TST_NonSupine ']").html(row[1]);break;
 case 'RERA_Index_TST_NonSupine ': records[I]['RERA_Index_TST_NonSupine ']=row[1];td.parent().find("td[data-id='RERA_Index_TST_NonSupine ']").html(row[1]);break;
