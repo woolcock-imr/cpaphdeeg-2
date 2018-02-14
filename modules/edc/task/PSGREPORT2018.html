@@ -43,7 +43,7 @@
                         change_file_name("");
                     })
                     td.find('input[type=file]').on('change',function(evt){
-                        td.find('a.remove_file').css('visibility',');
+                        td.find('a.remove_file').css('visibility','');
                         var file = this.files[0];
                         change_file_name(file.name);
                         read_file(file);
