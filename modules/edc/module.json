@@ -23,7 +23,7 @@
 		"Screening_Evening_SEMSA":{"table_id":"20009308","url":"modules/edc/task/SEMSA.html","name_for_search":"Screening_Evening_SEMSA_QUEST", "form_module":"Screening_Evening_SEMSA_QUEST", "task": "SEMSA"},
 		"Screening_Evening_SEMSA_QUEST":{"table_id":"20009308","url":"modules/edc/task/SEMSA.QUEST.html"},
 		"Screening_Evening_Sleepdiary":{"table_id":"20009543","url":"modules/edc/task/File_upload.html","name_for_search":"Screening Sleep Diary"},
-		"Screening_Evening_DiagnosticPSG":{"table_id":"20009310","url":"modules/edc/task/PSGREPORT2018.html","name_for_search":"Diagnostic Sleep Report"},
+		"Screening_Evening_DiagnosticPSG":{"table_id":"20009310","url":"modules/edc/task/File_upload.html","name_for_search":"Diagnostic Sleep Report"},
 		"Screening_IncluExclu":{"table_id":"20009571","url":"modules/edc/task/IncluExclu.html","name_for_search":"Inclusion Exclusion Criteria", "form_module":"Screening_IncluExclu_form"},
 		"Screening_IncluExclu_form":{"table_id":"20009571","url":"modules/edc/task/IncluExclu.form.html"},
 
@@ -51,7 +51,7 @@
 		"Baseline_LCT_Quest":{"table_id":"20009321","url":"modules/edc/task/LCT.QUEST.html"},
 		"Baseline_NBack":{"table_id":"20009569","url":"modules/edc/task/N_Back.html","name_for_search":"Baseline N-Back (2-Back)", "form_module":"Baseline_NBack_Quest","task":"N-Back (2-Back)"},
 		"Baseline_NBack_Quest":{"table_id":"20009569","url":"modules/edc/task/N2_Back.QUEST.html"},
-		"Baseline_PSG300_Report":{"table_id":"20009324","url":"modules/edc/task/PSG300.html","name_for_search":"Baseline PSG300 Report"},
+		"Baseline_PSG300_Report":{"table_id":"20009324","url":"modules/edc/task/PSGREPORT2018.html","name_for_search":"Baseline PSG300 Report"},
 		"Baseline_Sleep_Scoring_File_Upload":{"table_id":"20009325","url":"modules/edc/task/File_upload.html","name_for_search":"Baseline Sleep Scoring File upload"},
 		"Baseline_EDF_File_Upload":{"table_id":"20009326","url":"modules/edc/task/File_upload.html","name_for_search":"Baseline EDF File upload"},
 		"Baseline_morning_word_pair_Set_1":{"table_id":"20009328","url":"modules/edc/task/morning_word_pair_set_1.html","name_for_search":"Baseline Morning Word Pair 1", "task": "Morning Word Pair 1"},
@@ -109,7 +109,7 @@
 		"TreatmentEvening_NBack_Quest":{"table_id":"20009658","url":"modules/edc/task/N2_Back.QUEST.html"},
 
 
-		"TreatmentEvening_PSG300_Report":{"table_id":"20009354","url":"modules/edc/task/PSG300.html","name_for_search":"TreatmentPSG300 Report"},
+		"TreatmentEvening_PSG300_Report":{"table_id":"20009354","url":"modules/edc/task/PSGREPORT2018.html","name_for_search":"TreatmentPSG300 Report"},
 		"TreatmentEvening_Sleep_Scoring_File_Upload":{"table_id":"20009355","url":"modules/edc/task/File_upload.html","name_for_search":"TreatmentSleep Scoring File upload"},
 		"TreatmentEvening_EDF_File_Upload":{"table_id":"20009356","url":"modules/edc/task/File_upload.html","name_for_search":"TreatmentEDF File upload"},
 
