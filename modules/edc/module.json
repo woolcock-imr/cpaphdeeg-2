@@ -83,8 +83,8 @@
 		"CPAP_SEMSA2_QUEST":{"table_id":"20009338","url":"modules/edc/task/SEMSA.QUEST.html"},
 		"CPAP_SEMSA3":{"table_id":"20009544","url":"modules/edc/task/SEMSA.html","name_for_search":"CPAP_SEMSA3_QUEST", "form_module":"CPAP_SEMSA3_QUEST', task:'SEMSA - 12 weeks"},
 		"CPAP_SEMSA3_QUEST":{"table_id":"20009544","url":"modules/edc/task/SEMSA.QUEST.html"},
-		"CPAPVisit_6wks":{"table_id":"20009555","url":"modules/edc/task/Date_of_visit.html","name_for_search":"CPAP 6 Week Visit Date"},
-		"CPAPVisit_12wks":{"table_id":"20009556","url":"modules/edc/task/Date_of_visit.html","name_for_search":"CPAP 12 Week Visit Date"},
+		"CPAPVisit_6wks":{"table_id":"20009555","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"CPAP 6 Week Visit Date"},
+		"CPAPVisit_12wks":{"table_id":"20009556","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"CPAP 12 Week Visit Date"},
 
 
 
