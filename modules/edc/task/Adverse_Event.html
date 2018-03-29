@@ -21,11 +21,11 @@
             switch(field){
                 case 'Was_AE_Serious':
                     td.html('<input type=checkbox />');
-                    VmInclude:__BASE__/vmiis/Common-Code/grid/field_checkbox.js
+                    VmInclude:__COMPONENT__/grid/field_checkbox.js
                 break;
                 case 'CPAP_Related':
                     td.html('<input type=checkbox />');
-                    VmInclude:__BASE__/vmiis/Common-Code/grid/field_checkbox.js
+                    VmInclude:__COMPONENT__/grid/field_checkbox.js
                 break;
                 case 'Intensity':
                     var html="<select style='border:0;''>\
@@ -34,7 +34,7 @@
                             <option>Severe</option>\
                         </select>\
                     ";
-                    VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                    VmInclude:__COMPONENT__/grid/field_select.js
                 break;
                 case 'Frequency':
                     var html="<select style='border:0;''>\
@@ -42,7 +42,7 @@
                             <option>Intermittent</option>\
                             </select>\
                     ";
-                    VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                    VmInclude:__COMPONENT__/grid/field_select.js
                 break;
                 case 'Treatment_Required':
                     var html="<select style='border:0;''>\
@@ -53,7 +53,7 @@
                             <option>Other (specify)</option>\
                         </select>\
                     ";
-                    VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                    VmInclude:__COMPONENT__/grid/field_select.js
                 break;
                 case 'Outcome':
                     var html="<select style='border:0;''>\
@@ -64,7 +64,7 @@
                             <option>Unknown</option>\
                         </select>\
                     ";
-                    VmInclude:__BASE__/vmiis/Common-Code/grid/field_select.js
+                    VmInclude:__COMPONENT__/grid/field_select.js
                 break;
             }
         }
