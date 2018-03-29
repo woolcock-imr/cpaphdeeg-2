@@ -13,7 +13,7 @@
 		"Adverse_Event":{"table_id":"20009304","url":"modules/edc/task/Adverse_Event.html","name_for_search":" Adverse Event"},
 		"Concom_Medication":{"table_id":"20009305","url":"modules/edc/task/concom_medication.html","name_for_search":"Concomitant Medication", "form_module":"Concom_Medication_Form"},
 		"Concom_Medication_Form":{"table_id":"20009305","url":"modules/edc/task/concom_medication.form.html"},
-		"File_Notes":{"table_id":"20009301","url":"modules/edc/task/File_Notes.html","name_for_search":"File Notes"},
+		"File_Notes":{"table_id":"20009301","url":"modules/edc/task/File_upload.html","name_for_search":"Source Document Upload"},
 
 
 		"Screening_Visitdate":{"table_id":"20009570","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"Screening Visit Date"},
@@ -39,7 +39,7 @@
 		"Baseline_Evening_PSQI":{"table_id":"20009316","url":"modules/edc/task/psqi.html","name_for_search":"Baseline Pittsburgh Sleep Quality Index (PSQI)', form_module: A+ 'Baseline_Evening_PSQI_Form", "task": "Pittsburgh Sleep Quality Index (PSQI)"},
 		"Baseline_Evening_PSQI_Form":{"table_id":"20009316","url":"modules/edc/task/Pittsburgh_Sleep_Quality_Index.QUEST.html"},
 		"Baseline_Evening_WTAR":{"table_id":"20009317","url":"modules/edc/task/WTAR.html","name_for_search":"Baseline Welscher Test of Adult Reading (WTAR) "},
-		"Baseline_Evening_DASS":{"table_id":"20009553","url":"modules/edc/task/dass.html',notes: 'Baseline DASS-21", "form_module":"Baseline_Evening_DASS_form", "task": "Depression Anxiety and Stress Scale (DASS-21)"},
+		"Baseline_Evening_DASS":{"table_id":"20009553","url":"modules/edc/task/dass.html","name_for_search": "Baseline DASS-21", "form_module":"Baseline_Evening_DASS_form", "task": "Depression Anxiety and Stress Scale (DASS-21)"},
 		"Baseline_Evening_DASS_form":{"table_id":"20009553","url":"modules/edc/task/dass.form.html"},
 		"Baseline_KDT":{"table_id":"20009318","url":"modules/edc/task/KDT.html","name_for_search":"Baseline  Karolinska Drowsiness Test (KDT)',form_module: A+ 'Baseline_KDT_form"},
 		"Baseline_PVT":{"table_id":"20009319","url":"modules/edc/task/PVT.html","name_for_search":"Baseline  Psychomotor Vigilance Test (PVT) "},
@@ -56,15 +56,17 @@
 		"Baseline_EDF_File_Upload":{"table_id":"20009326","url":"modules/edc/task/File_upload.html","name_for_search":"Baseline EDF File upload"},
 		"Baseline_morning_word_pair_Set_1":{"table_id":"20009328","url":"modules/edc/task/morning_word_pair_set_1.html","name_for_search":"Baseline Morning Word Pair 1", "task": "Morning Word Pair 1"},
 		"Baseline_Morning_word_pair_Set_2":{"table_id":"20009329","url":"modules/edc/task/morning_word_pair_set_2.html","name_for_search":"Baseline Morning Word Pair 2", "task": "Morning Word Pair 2"},
-		"Baseline_Morning_LDT_Test_Set_1":{"table_id":"20009555","url":"modules/edc/task/LDT_Morning_Set1.html', notes: 'Baseline Morning Lexical Decision Task 1", "task": "Morning Lexical Decision Task 1"},
-		"Baseline_Morning_LDT_Test_Set_2":{"table_id":"20009556","url":"modules/edc/task/LDT_Morning_Set2.html', notes: 'Baseline Morning Lexical Decision Task 2", "task": "Morning Lexical Decision Task 2"},
-		"Baseline_Morning_KSS":{"table_id":"20009552","url":"modules/edc/task/kss.html',notes: 'Baseline Morning Karolinska Sleepiness Scale", "form_module":"Baseline_Morning_KSS_form", "task": "Karolinska Sleepiness Scale (KSS)"},
+		"Baseline_Morning_LDT_Test_Set_1":{"table_id":"---20009555---","url":"modules/edc/task/LDT_Morning_Set1.html", "name_for_search": "Baseline Morning Lexical Decision Task 1", "task": "Morning Lexical Decision Task 1"},
+		"Baseline_Morning_LDT_Test_Set_2":{"table_id":"---20009556---","url":"modules/edc/task/LDT_Morning_Set2.html", "name_for_search": "Baseline Morning Lexical Decision Task 2", "task": "Morning Lexical Decision Task 2"},
+		"Baseline_Morning_KSS":{"table_id":"20009552","url":"modules/edc/task/kss.html","name_for_search":"Baseline Morning Karolinska Sleepiness Scale", "form_module":"Baseline_Morning_KSS_form", "task": "Karolinska Sleepiness Scale (KSS)"},
 		"Baseline_Morning_KSS_form":{"table_id":"20009552","url":"modules/edc/task/kss.QUEST.html"},
 
 		"Baseline_evening_finger_tapping_12":{"table_id":"20010464","url":"modules/edc/task/finger_tapping_12.html","name_for_search":"Baseline Evening Finger Tapping", "form_module":"Baseline_evening_finger_tapping_12_form","task":"Baseline Evening Finger Tapping"},
 		"Baseline_evening_finger_tapping_12_form":{"table_id":"20010464","url":"modules/edc/task/finger_tapping_12.form.html"},
 		"Baseline_Morning_finger_tapping_6":{"table_id":"20010465","url":"modules/edc/task/finger_tapping_6.html","name_for_search":"Baseline Morning Finger Tapping", "form_module":"Baseline_Morning_finger_tapping_6_form","task":"Baseline Morning Finger Tapping"},
 		"Baseline_Morning_finger_tapping_6_form":{"table_id":"20010465","url":"modules/edc/task/finger_tapping_6.form.html"},
+		"Baseline_evening_Memorytask_Fileupload":{"table_id":"20009554","url":"modules/edc/task/File_upload.html"},
+
 
 		"CPAP_CPAPtitration":{"table_id":"20009330","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"CPAP CPAP titration visit date"},
 		"CPAP_Anthro_Short":{"table_id":"20009331","url":"modules/edc/task/Anthro_Short.html","name_for_search":"CPAP Anthropometry"},
@@ -81,6 +83,9 @@
 		"CPAP_SEMSA2_QUEST":{"table_id":"20009338","url":"modules/edc/task/SEMSA.QUEST.html"},
 		"CPAP_SEMSA3":{"table_id":"20009544","url":"modules/edc/task/SEMSA.html","name_for_search":"CPAP_SEMSA3_QUEST", "form_module":"CPAP_SEMSA3_QUEST', task:'SEMSA - 12 weeks"},
 		"CPAP_SEMSA3_QUEST":{"table_id":"20009544","url":"modules/edc/task/SEMSA.QUEST.html"},
+		"CPAPVisit_6wks":{"table_id":"20009555","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"CPAP 6 Week Visit Date"},
+		"CPAPVisit_12wks":{"table_id":"20009556","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"CPAP 12 Week Visit Date"},
+
 
 
 
@@ -94,7 +99,7 @@
 		"TreatmentEvening_ISI_Form":{"table_id":"20009345","url":"modules/edc/task/Insomnia_Severity_Index.form.html"},
 		"TreatmentEvening_PSQI":{"table_id":"20009346","url":"modules/edc/task/psqi.html","name_for_search":"Treatment Pittsburgh Sleep Quality Index (PSQI)', form_module: A+ 'TreatmentEvening_PSQI_Form', task:'Pittsburgh Sleep Quality Index (PSQI)"},
 		"TreatmentEvening_PSQI_Form":{"table_id":"20009346","url":"modules/edc/task/Pittsburgh_Sleep_Quality_Index.QUEST.html"},
-		"TreatmentEvening_DASS":{"table_id":"20009558","url":"modules/edc/task/dass.html',notes: 'Baseline DASS-21", "form_module":"TreatmentEvening_DASS_form", "task": "Depression Anxiety and Stress Scale (DASS-21)"},
+		"TreatmentEvening_DASS":{"table_id":"20009558","url":"modules/edc/task/dass.html","name_for_search": "Baseline DASS-21", "form_module":"TreatmentEvening_DASS_form", "task": "Depression Anxiety and Stress Scale (DASS-21)"},
 		"TreatmentEvening_DASS_form":{"table_id":"20009558","url":"modules/edc/task/dass.form.html"},
 		"TreatmentEvening_WTAR":{"table_id":"20009347","url":"modules/edc/task/WTAR.html","name_for_search":"TreatmentWelscher Test of Adult Reading (WTAR) "},
 		"TreatmentEvening_KDT":{"table_id":"20009348","url":"modules/edc/task/KDT.html","name_for_search":"Treatment Karolinska Drowsiness Test (KDT)"},
@@ -117,7 +122,7 @@
 		"TreatmentMorning_word_pair_Set_1":{"table_id":"20009358","url":"modules/edc/task/morning_word_pair_set_1.html","name_for_search":"Treatment Morning Word Pair 1", "task": "Morning Word Pair 1"},
 		"TreatmentMorning_word_pair_Set_2":{"table_id":"20009359","url":"modules/edc/task/morning_word_pair_set_2.html","name_for_search":"Treatment Morning Word Pair 2", "task": "Morning Word Pair 2"},
 		"TreatmentMorning_Memorytask_Fileupload":{"table_id":"20009567","url":"modules/edc/task/File_upload.html","name_for_search":"Treatment Memory task tests"},
-		"TreatmentMorning_KSS":{"table_id":"20009557","url":"modules/edc/task/kss.html',notes: 'Treatment Morning Karolinska Sleepiness Scale", "form_module":"TreatmentMorning_KSS_form", "task": "Karolinska Sleepiness Scale (KSS)"},
+		"TreatmentMorning_KSS":{"table_id":"20009557","url":"modules/edc/task/kss.html","name_for_search": "Treatment Morning Karolinska Sleepiness Scale", "form_module":"TreatmentMorning_KSS_form", "task": "Karolinska Sleepiness Scale (KSS)"},
 		"TreatmentMorning_KSS_form":{"table_id":"20009557","url":"modules/edc/task/kss.QUEST.html"},
 
 		"TreatmentEvening_finger_tapping_12":{"table_id":"20010466","url":"modules/edc/task/finger_tapping_12.html","name_for_search":"Treatment Evening Finger Tapping", "form_module":"TreatmentEvening_finger_tapping_12_form","task":"Treatment Evening Finger Tapping"},
