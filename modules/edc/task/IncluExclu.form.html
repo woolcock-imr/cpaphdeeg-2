@@ -21,13 +21,13 @@
             <tr  colspan=5><td class=subheader__ID>Inclusion</td><td  class=subheader__ID>Tick (If yes) </td><td  class=subheader__ID>Tick (If no) </td><td class=subheader__ID>Comment</td></tr>
 
              <tr><td>Aged 40-60 years old</td>
-               <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Age name=Age id=Age /></td>
-               <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Age name=Age id=Age /></td>
+               <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Age_yes name=Age id=Age /></td>
+               <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Age_no name=Age id=Age /></td>
                <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Age_comment  name=Age_comment  id=Age_comment  /></td></tr>
 
              <tr><td>Male</td>
-             <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Male name=Male id=Male /></td>
-             <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Male name=Male id=Male /></td>
+             <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Male_yes name=Male id=Male /></td>
+             <td><input type=checkbox class=modified_checkbox__ID data-custom=1 data-id=Male_no name=Male id=Male /></td>
              <td><input class=input_box_small__ID type=text  data-custom=1 data-id=Male_comment  name=Male_comment  id=Male_comment  /></td></tr>
 
             <tr><td>Recommended CPAP by a Sleep Physician</td>
@@ -129,9 +129,10 @@
                         })
                     break;
                     //Checkbox
-                    case 'Age':
-                    case 'Male':
-                    case 'Male':
+                    case 'Age_yes':
+                    case 'Age_no':
+                    case 'Male_yes':
+                    case 'Male_no':
                     case 'CPAP_yes':
                     case 'CPAP_no':
                     //case 'OSA15':
