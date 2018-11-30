@@ -65,7 +65,7 @@
 		"Baseline_evening_finger_tapping_12_form":{"table_id":"20010464","url":"modules/edc/task/finger_tapping_12.form.html"},
 		"Baseline_Morning_finger_tapping_6":{"table_id":"20010465","url":"modules/edc/task/finger_tapping_6.html","name_for_search":"Baseline Morning Finger Tapping", "form_module":"Baseline_Morning_finger_tapping_6_form","task":"Baseline Morning Finger Tapping"},
 		"Baseline_Morning_finger_tapping_6_form":{"table_id":"20010465","url":"modules/edc/task/finger_tapping_6.form.html"},
-		"Baseline_evening_Memorytask_Fileupload":{"table_id":"20009554","url":"modules/edc/task/File_upload.html"},
+		"Baseline_evening_Memorytask_Fileupload":{"table_id":"20009554","url":"modules/edc/task/Memtest.html"},
 
 
 		"CPAP_CPAPtitration":{"table_id":"20009330","url":"modules/edc/task/Date_of_Visit.html","name_for_search":"CPAP CPAP titration visit date"},
@@ -121,7 +121,7 @@
 		"TreatmentMorning_KDT":{"table_id":"20009357","url":"modules/edc/task/KDT.html","name_for_search":"Treatment Morning  Karolinska Drowsiness Test (KDT)"},
 		"TreatmentMorning_word_pair_Set_1":{"table_id":"20009358","url":"modules/edc/task/morning_word_pair_set_1.html","name_for_search":"Treatment Morning Word Pair 1", "task": "Morning Word Pair 1"},
 		"TreatmentMorning_word_pair_Set_2":{"table_id":"20009359","url":"modules/edc/task/morning_word_pair_set_2.html","name_for_search":"Treatment Morning Word Pair 2", "task": "Morning Word Pair 2"},
-		"TreatmentMorning_Memorytask_Fileupload":{"table_id":"20009567","url":"modules/edc/task/File_upload.html","name_for_search":"Treatment Memory task tests"},
+		"TreatmentMorning_Memorytask_Fileupload":{"table_id":"20009567","url":"modules/edc/task/Memtest.html","name_for_search":"Treatment Memory task tests"},
 		"TreatmentMorning_KSS":{"table_id":"20009557","url":"modules/edc/task/kss.html","name_for_search": "Treatment Morning Karolinska Sleepiness Scale", "form_module":"TreatmentMorning_KSS_form", "task": "Karolinska Sleepiness Scale (KSS)"},
 		"TreatmentMorning_KSS_form":{"table_id":"20009557","url":"modules/edc/task/kss.QUEST.html"},
 
